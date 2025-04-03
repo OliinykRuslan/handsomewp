@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>One Click Upsells</title>
+        <meta name="description" content="">
+        <link rel="icon" href="../wp-content/uploads/favicon/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="180x180" href="../wp-content/uploads/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../wp-content/uploads/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../wp-content/uploads/favicon/favicon-16x16.png">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <header class="header v2">
+            <div class="container">
+                <div class="header-wrap">
+                    <a href="/" class="logo">
+                        <picture>
+                            <source srcset="./assets/images/2x/webp/cm-logo@2x.webp 2x, ./assets/images/webp/cm-logo.webp 1x" type="image/webp">
+                            <source srcset="./assets/images/2x/cm-logo@2x.png 2x, ./assets/images/cm-logo.png 1x" type="image/png">
+                            <img src="./assets/images/cm-logo.png" alt="conversion-magic" width="292" height="57" class="img-fluid" loading="eager" decoding="async">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <section class="section section-hero section-video">
+            <div class="container">
+                <h1 class="section-title">
+                    Is Your <span class="primary">Woocommerce</span> Store Leaking Money?
+                </h1>
+                <div class="section-subtitle font-medium">
+                    <p>See how WooCommerce users are losing money...</p>
+                    <p>...and they don't even know it.</p>
+                    <p>PLUS - learn how you can fix it in less than 24 hours.</p>
+                </div>
+                <div class="video-wrap" onclick="loadVideo()">
+                    <!-- placeholder image -->
+                    <img 
+                        class="video-placeholder" 
+                        src="https://i.vimeocdn.com/video/761108400-2ea0511151881748647f9c5f79dee650dc70e3303c0259d2318bfea20bdecd41-d?mw=1900&mh=1069&q=70" 
+                        alt="Video placeholder"
+                        width="940" height="542"
+                    />
+                    <!-- play btn -->
+                    <svg class="play-btn">
+                        <use xlink:href="#play-btn-ico"></use>
+                    </svg>
+                    <!-- video -->
+                    <iframe 
+                        class="video-frame video-upsell" 
+                        src="about:blank" 
+                        frameborder="0" 
+                        allow="autoplay; fullscreen" 
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: none;"
+                    ></iframe>
+                </div>
+
+                <div class="wrap-btn">
+                    <a href="#pricing" class="btn">Try Now</a>
+                    <a href="https://demo.handsomewp.com/wp-login.php" class="btn light-btn">Admin Demo</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-img-text bg-effect">
+            <div class="container">
+                <div class="quote-alert">
+                    <div class="hide-sm-max">
+                        <picture>
+                            <source srcset="./assets/images/2x/webp/jordan-ellington-big@2x.webp 2x, ./assets/images/webp/jordan-ellington-big.webp 1x" type="image/webp">
+                            <source srcset="./assets/images/2x/jordan-ellington-big@2x.png 2x, ./assets/images/jordan-ellington-big.png 1x" type="image/png">
+                            <img src="./assets/images/jordan-ellington-big.png" alt="jordan-ellington-big" loading="lazy" class="img-fluid author-avatar">
+                        </picture>
+                    </div>
+                    <div class="quote-descript">
+                        <div class="quote">
+                            <svg class="quote-ico"><use xlink:href="#quote"></use></svg>
+                            <h4 class="quote-title">“Very easy to setup and use...”</h4>
+                            <blockquote>“Just setup One Click Upsells. Amazing! Been looking for something like this for years. Your plugin is the real deal, very easy to setup and use. You should be very proud of the simplicity AND sophistication you’ve built.”​</blockquote>
+                        </div>
+                        <div class="hide-sm-min">
+                            <picture>
+                                <source srcset="./assets/images/2x/webp/jordan-ellington-big@2x.webp 2x, ./assets/images/webp/jordan-ellington-big.webp 1x" type="image/webp">
+                                <source srcset="./assets/images/2x/jordan-ellington-big@2x.png 2x, ./assets/images/jordan-ellington-big.png 1x" type="image/png">
+                                <img src="./assets/images/jordan-ellington-big.png" alt="jordan-ellington-big" loading="lazy" class="img-fluid author-avatar">
+                            </picture>
+                        </div>
+                        <div class="author">
+                            <div class="author-info">
+                                <h4>JORDAN ELLINGTON</h4>
+                                <p>The Spanish Dude</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="section-title">Here’s Everything You Get</h2>
+                <div class="inner-wrap">
+                    <article class="img-text-item">
+                        <div class="img-holder">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/webp/upsells-img1.webp 1x, assets/images/2x/webp/upsells-img1@2x.webp 2x">
+                                <source type="image/png" srcset="assets/images/upsells-img1.png 1x, assets/images/2x/upsells-img1@2x.png 2x">
+                                <img src="assets/images/upsells-img1.png" alt="upsells-img" loading="lazy" class="img-fluid">
+                            </picture>
+                        </div>
+                        <div class="text-holder">
+                            <h4 class="item-title">Easy Funnel Builder</h4>
+                            <p>The funnel builder is where you decide which upsell or downsell is offered to your customer. You can create as many offers as you want. And you <b>choose what happens at each step of your funnel.</b> Our Easy Funnel Builder also lets you make customizations to each offer along the way.</p>
+                        </div>
+                    </article>
+                    <div class="img-text-item">
+                        <div class="text-holder">
+                            <h4 class="item-title">Smart Tracking and Reporting</h4>
+                            <p>Tracking and reporting for your one time offers is built into the core of One Click Upsells. If you want to see <b>how much upsell revenue a funnel has generated,</b> it’s easy. If you want to see upsell revenue for all funnels, it’s easy. And if you want to see which funnels are converting the highest and which ones are being abandoned by your customers, it’s… well you get the idea :)</p>
+                        </div>
+                        <div class="img-holder">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/webp/upsells-img2.webp 1x, assets/images/2x/webp/upsells-img2@2x.webp 2x">
+                                <source type="image/png" srcset="assets/images/upsells-img2.png 1x, assets/images/2x/upsells-img2@2x.png 2x">
+                                <img src="assets/images/upsells-img2.png" alt="upsells-img" loading="lazy" class="img-fluid">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="img-text-item">
+                        <div class="img-holder">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/webp/upsells-img3.webp 1x, assets/images/2x/webp/upsells-img3@2x.webp 2x">
+                                <source type="image/png" srcset="assets/images/upsells-img3.png 1x, assets/images/2x/upsells-img3@2x.png 2x">
+                                <img src="assets/images/upsells-img3.png" alt="upsells-img" loading="lazy" class="img-fluid">
+                            </picture>
+                        </div>
+                        <div class="text-holder">
+                            <h4 class="item-title">Facebook Pixel Integration</h4>
+                            <p><b>Easily track Facebook events</b> on each upsell or downsell you offer. You can track whether an offer was viewed, abandoned or if there was a conversion event. This is true for any tracking pixel even if it's not Facebook.</p>
+                        </div>
+                    </div>
+                    <div class="img-text-item">
+                        <div class="text-holder">
+                            <h4 class="item-title">Choose Your Upsell Quantity</h4>
+                            <p>Pre-select the quantity of your products for any upsell or downsell. Or let your customers choose. It’s up to you.</p>
+                        </div>
+                        <div class="img-holder">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/webp/upsells-img4.webp 1x, assets/images/2x/webp/upsells-img4@2x.webp 2x">
+                                <source type="image/png" srcset="assets/images/upsells-img4.png 1x, assets/images/2x/upsells-img4@2x.png 2x">
+                                <img src="assets/images/upsells-img4.png" alt="upsells-img" loading="lazy" class="img-fluid">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="img-text-item">
+                        <div class="img-holder">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/webp/upsells-img5.webp 1x, assets/images/2x/webp/upsells-img5@2x.webp 2x">
+                                <source type="image/png" srcset="assets/images/upsells-img5.png 1x, assets/images/2x/upsells-img5@2x.png 2x">
+                                <img src="assets/images/upsells-img5.png" alt="upsells-img" loading="lazy" class="img-fluid">
+                            </picture>
+                        </div>
+                        <div class="text-holder">
+                            <h4 class="item-title">Custom Video Or Text Upsell Pages</h4>
+                            <p>With One Click Upsells you can <b>use any page builder</b> to create the kind of page you want. Send your customers to an upsell OR downsell page that uses video, text...or BOTH!</p>
+                        </div>
+                    </div>
+                    <div class="img-text-item">
+                        <div class="text-holder">
+                            <h4 class="item-title">Smart Skip Technology</h4>
+                            <p>What happens if your customer is buying the product you’re using for one of your upsells? With our Smart Skip Technology, you can <b>hide that upsell based on the items already in the cart.</b> We’ll skip that offer and move on to the next offer in your funnel.</p>
+                        </div>
+                        <div class="img-holder">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/webp/upsells-img6.webp 1x, assets/images/2x/webp/upsells-img6@2x.webp 2x">
+                                <source type="image/png" srcset="assets/images/upsells-img6.png 1x, assets/images/2x/upsells-img6@2x.png 2x">
+                                <img src="assets/images/upsells-img6.png" alt="upsells-img" loading="lazy" class="img-fluid">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="img-text-item">
+                        <div class="img-holder">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/webp/upsells-img7.webp 1x, assets/images/2x/webp/upsells-img7@2x.webp 2x">
+                                <source type="image/png" srcset="assets/images/upsells-img7.png 1x, assets/images/2x/upsells-img7@2x.png 2x">
+                                <img src="assets/images/upsells-img7.png" alt="upsells-img" loading="lazy" class="img-fluid">
+                            </picture>
+                        </div>
+                        <div class="text-holder">
+                            <h4 class="item-title">Smart Triggers</h4>
+                            <p>There are more than <b>12 ways to trigger your upsell funnel.</b> With Smart Triggers you can set up your funnels to start based on individual products, product categories, product tags, customer's location or if it's their first time buyer. Plus a lot more!</p>
+                        </div>
+                    </div>
+                    <div class="img-text-item">
+                        <div class="text-holder">
+                            <h4 class="item-title">Calculate Shipping</h4>
+                            <p>We give you <b>three options for handling shipping</b> for your upsell offers. And you can do it all from your funnel builder. You can offer FREE shipping, Flat Rate or apply the same shipping calculation used in the parent order.</p>
+                        </div>
+                        <div class="img-holder">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/webp/upsells-img8.webp 1x, assets/images/2x/webp/upsells-img8@2x.webp 2x">
+                                <source type="image/png" srcset="assets/images/upsells-img8.png 1x, assets/images/2x/upsells-img8@2x.png 2x">
+                                <img src="assets/images/upsells-img8.png" alt="upsells-img" loading="lazy" class="img-fluid">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="img-text-item">
+                        <div class="img-holder">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/webp/upsells-img9.webp 1x, assets/images/2x/webp/upsells-img9@2x.webp 2x">
+                                <source type="image/png" srcset="assets/images/upsells-img9.png 1x, assets/images/2x/upsells-img9@2x.png 2x">
+                                <img src="assets/images/upsells-img9.png" alt="upsells-img" loading="lazy" class="img-fluid">
+                            </picture>
+                        </div>
+                        <div class="text-holder">
+                            <h4 class="item-title">Smart Batching</h4>
+                            <p>Batching for upsells is something we created a couple years ago and it's incredibly powerful. This feature gives you the option to <b>combine your upsells with the parent order</b> that's triggering your funnel or keep it separate. Combining orders is especially important for fulfillment. It makes sure all the items are part of the same order and will be shipped together.</p>
+                        </div>
+                    </div>
+                    <div class="img-text-item">
+                        <div class="text-holder">
+                            <h4 class="item-title">Duplicate Your Funnel</h4>
+                            <p>Got a post purchase funnel that's converting really well? Don't waste time recreating it from scratch. Duplicate it <b>and apply it to another product with a click.</b> It only takes a few seconds!</p>
+                        </div>
+                        <div class="img-holder">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/webp/upsells-img10.webp 1x, assets/images/2x/webp/upsells-img10@2x.webp 2x">
+                                <source type="image/png" srcset="assets/images/upsells-img10.png 1x, assets/images/2x/upsells-img10@2x.png 2x">
+                                <img src="assets/images/upsells-img10.png" alt="upsells-img" loading="lazy" class="img-fluid">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="img-text-item">
+                        <div class="img-holder">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/webp/upsells-img11.webp 1x, assets/images/2x/webp/upsells-img11@2x.webp 2x">
+                                <source type="image/png" srcset="assets/images/upsells-img11.png 1x, assets/images/2x/upsells-img11@2x.png 2x">
+                                <img src="assets/images/upsells-img11.png" alt="upsells-img" loading="lazy" class="img-fluid">
+                            </picture>
+                        </div>
+                        <div class="text-holder">
+                            <h4 class="item-title">Funnel Priority</h4>
+                            <p>The Funnel Priority feature gives you the option to <b>prioritize one upsell funnel over another.</b> This is important if you have two products being purchased and they each have a different upsell sequence. Which one wins? This feature lets you set the priority so you have 100% control.</p>
+                        </div>
+                    </div>
+                    <div class="img-text-item">
+                        <div class="text-holder">
+                            <h4 class="item-title">Funnel Finder</h4>
+                            <p>Once you start using One Click Upsells and experience the results of generating more sales from every customer, you're going to start creating more and more funnels. The Funnel Finder makes it easy to <b>find the exact funnel you're looking for without having to do any scrolling.</b></p>
+                        </div>
+                        <div class="img-holder">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/webp/upsells-img12.webp 1x, assets/images/2x/webp/upsells-img12@2x.webp 2x">
+                                <source type="image/png" srcset="assets/images/upsells-img12.png 1x, assets/images/2x/upsells-img12@2x.png 2x">
+                                <img src="assets/images/upsells-img12.png" alt="upsells-img" loading="lazy" class="img-fluid">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="img-text-item">
+                        <div class="img-holder">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/webp/upsells-img13.webp 1x, assets/images/2x/webp/upsells-img13@2x.webp 2x">
+                                <source type="image/png" srcset="assets/images/upsells-img13.png 1x, assets/images/2x/upsells-img13@2x.png 2x">
+                                <img src="assets/images/upsells-img13.png" alt="upsells-img" loading="lazy" class="img-fluid">
+                            </picture>
+                        </div>
+                        <div class="text-holder">
+                            <h4 class="item-title">Affiliate WP Integration</h4>
+                            <p>Work with affiliates? We integrate with Affiliate WP so your upsells can be credited to your promotional partners easily.</p>
+                        </div>
+                    </div>
+                    <div class="img-text-item">
+                        <div class="text-holder">
+                            <h4 class="item-title">Works with Handsome Checkout</h4>
+                            <p>If you’re one of the thousands using Handsome Checkout, One Click Upsells is the perfect companion. You’re already offering <b>pre purchase upsells with our Order Bump technology.</b> Post purchase upsells are the next logical step.</p>
+                        </div>
+                        <div class="img-holder">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/webp/upsells-img14.webp 1x, assets/images/2x/webp/upsells-img14@2x.webp 2x">
+                                <source type="image/png" srcset="assets/images/upsells-img14.png 1x, assets/images/2x/upsells-img14@2x.png 2x">
+                                <img src="assets/images/upsells-img14.png" alt="checkout-img" loading="lazy" class="img-fluid">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-wrap">
+                    <a href="#pricing" class="btn">Try Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-integrations">
+            <div class="container">
+                <h2 class="section-title">Handsome Checkout Works With:</h2>
+                <div class="inner-wrap">
+                    <article class="item">
+                        <h4 class="item-title">Integrations</h4>
+                        <ul class="integrations-list">
+                            <li><img src="./assets/images/logo_pp.svg" alt="logo_paypal" width="95" height="25" loading="lazy" class="img-fluid"></li>
+                            <li><img src="./assets/images/logo_stripe.svg" alt="logo_stripe" width="66" height="27" loading="lazy" class="img-fluid"></li>
+                            <li><img src="./assets/images/logo_authorizenet.svg" alt="logo_authorizenet" width="134" height="18" loading="lazy" class="img-fluid"></li>
+                            <li><img src="./assets/images/logo_braintree.svg" alt="logo_braintree" width="123" height="18" loading="lazy" class="img-fluid"></li>
+                            <li><img src="./assets/images/logo_payflowpro.svg" alt="logo_payflowpro" width="102" height="24" loading="lazy" class="img-fluid"></li>
+                        </ul>
+                    </article>
+                    <article class="item">
+                        <h4 class="item-title">Page Builders</h4>
+                        <ul class="integrations-list">
+                            <li><img src="./assets/images/logo_elementor.svg" alt="logo_elementor" width="99" height="26" loading="lazy" class="img-fluid"></li>
+                            <li><img src="./assets/images/logo_divi.svg" alt="logo_divi" width="87" height="34" loading="lazy" class="img-fluid"></li>
+                            <li><img src="./assets/images/logo_thrive.svg" alt="logo_thrive" width="149" height="26" loading="lazy" class="img-fluid"></li>
+                            <li><img src="./assets/images/logo_beaver.svg" alt="logo_beaver" width="145" height="30" loading="lazy" class="img-fluid"></li>
+                            <li><img src="./assets/images/logo_visualcomposer.svg" alt="logo_visualcomposer" width="173" height="30" loading="lazy" class="img-fluid"></li>
+                        </ul>
+                    </article>
+                    <article class="item">
+                        <h4 class="item-title">Famous Plugins</h4>
+                        <ul class="integrations-list">
+                            <li><img src="./assets/images/logo_wcs.svg" alt="logo_wcs" width="111" height="35" loading="lazy" class="img-fluid"></li>
+                            <li><img src="./assets/images/logo_affiliatewp.svg" alt="logo_affiliatewp" width="113" height="18" loading="lazy" class="img-fluid"></li>
+                            <li><img src="./assets/images/logo_wcm.svg" alt="logo_wcm" width="107" height="41" loading="lazy" class="img-fluid"></li>
+                        </ul>
+                    </article>
+                    <article class="item">
+                        <h4 class="item-title">Tracking Tools</h4>
+                        <ul class="integrations-list">
+                            <li><img src="./assets/images/logo_fb.svg" alt="logo_fb" width="109" height="22" loading="lazy" class="img-fluid"></li>
+                            <li><img src="./assets/images/logo_google.svg" alt="logo_google" width="82" height="27" loading="lazy" class="img-fluid"></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-ico-text bg-effect bg-effect-middle">
+            <div class="container">
+                <div class="quote-alert">
+                    <div class="hide-sm-max">
+                        <picture>
+                            <source srcset="./assets/images/2x/webp/francisco-cabrera-big@2x.webp 2x, ./assets/images/webp/francisco-cabrera-big.webp 1x" type="image/webp">
+                            <source srcset="./assets/images/2x/francisco-cabrera-big@2x.png 2x, ./assets/images/francisco-cabrera-big.png 1x" type="image/png">
+                            <img src="./assets/images/francisco-cabrera-big.png" alt="francisco-cabrera-big" loading="lazy" class="img-fluid author-avatar">
+                        </picture>
+                    </div>
+                    <div class="quote-descript">
+                        <div class="quote">
+                            <svg class="quote-ico"><use xlink:href="#quote"></use></svg>
+                            <h4 class="quote-title">“We have some promotions with almost a 44% increase!”</h4>
+                            <blockquote>“We saw an average 20% increase in sales value. We have some promotions with almost a 44% increase! Funnel creation is intuitive and very easy to work. It’s so far the best support with unlimited flexibility.”​</blockquote>
+                        </div>
+                        <div class="hide-sm-min">
+                            <picture>
+                                <source srcset="./assets/images/2x/webp/francisco-cabrera-big@2x.webp 2x, ./assets/images/webp/francisco-cabrera-big.webp 1x" type="image/webp">
+                                <source srcset="./assets/images/2x/francisco-cabrera-big@2x.png 2x, ./assets/images/francisco-cabrera-big.png 1x" type="image/png">
+                                <img src="./assets/images/francisco-cabrera-big.png" alt="francisco-cabrera-big" loading="lazy" class="img-fluid author-avatar">
+                            </picture>
+                        </div>
+                        <div class="author">
+                            <div class="author-info">
+                                <h4>FRANCISCO C.</h4>
+                                <p>Dr. Sears Wellness Institute</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="section-title"><span class="white-text">Even More</span> Profit Boosting Features</h2>
+                <div class="inner-wrap">
+                    <article class="ico-text-item">
+                        <div class="ico-holder">
+                            <svg class="item-ico"><use xlink:href="#translation"></use></svg>
+                        </div>
+                        <div class="text-holder">
+                            <h5 class="item-title">Translation Is Built In</h5>
+                            <p>Translate all text lines to your customer’s language</p>
+                        </div>
+                    </article>
+                    <article class="ico-text-item">
+                        <div class="ico-holder">
+                            <svg class="item-ico"><use xlink:href="#remove-property"></use></svg>
+                        </div>
+                        <div class="text-holder">
+                            <h5 class="item-title">No Coding Required</h5>
+                            <p>Building your checkout page is as simple as point and click.</p>
+                        </div>
+                    </article>
+                    <article class="ico-text-item">
+                        <div class="ico-holder">
+                            <svg class="item-ico"><use xlink:href="#performance-goal"></use></svg>
+                        </div>
+                        <div class="text-holder">
+                            <h5 class="item-title">Designed for Conversion</h5>
+                            <p>Our templates are battle tested so you can focus on growing your business.</p>
+                        </div>
+                    </article>
+                    <article class="ico-text-item">
+                        <div class="ico-holder">
+                            <svg class="item-ico"><use xlink:href="#smiling-browser"></use></svg>
+                        </div>
+                        <div class="text-holder">
+                            <h5 class="item-title">Works with Any Theme</h5>
+                            <p>Handsome Checkout templates will work with any Wordpress theme.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="btn-wrap">
+                    <a href="#pricing" class="btn">Try Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-guarantee" id="pricing">
+            <div class="container">
+                <h2 class="section-title">You Make Money or You Don’t Pay.</h2>
+                <div class="inner-wrap">
+                    <div class="guarantee-item">
+                        <div class="img-holder">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/webp/guarantee.webp 1x, assets/images/2x/webp/guarantee@2x.webp 2x">
+                                <source type="image/png" srcset="assets/images/guarantee.png 1x, assets/images/2x/guarantee@2x.png 2x">
+                                <img src="assets/images/guarantee.png" alt="checkout-img" class="img-fluid">
+                            </picture>
+                        </div>
+                        <div class="text-holder">
+                            <p>It's simple. If you're not generating extra revenue with One Click Upsells, we don't deserve your business and you should cancel.</p>
+                            <p>In fact, if One Click Upsells doesn't pay for itself in the first 30 days or you're unhappy for any reason, just let us know and we'll issue you a full refund and cancel your account with us. This means you get an entire month to put it to the test. You risk nothing. Cancel anytime.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section section-plan">
+            <div class="container">
+                <div class="inner-wrap">
+                    <div class="btn-wrap btn-check-wrap">
+                        <button type="button" class="btn-check active" id="annuallyBtn">Annually</button>
+                        <button type="button" class="btn-check" id="monthlyBtn">Montly</button>
+                    </div>
+                    <div class="plan-row annually">
+                        <div class="plan-item-wrap">
+                            <div class="plan-item">
+                                <h4 class="plan-heading">Basic</h4>
+                                <p class="plan-price">$<span class="priceItemJs" data-monthly="..." data-annually="8">8</span>/month</p>
+                                <ul class="plan-list">
+                                    <li>Use on 2 sites (not just 1)</li>
+                                    <li>All features included</li>
+                                    <li>Unlimited upsells & downsells</li>
+                                    <li>All updates and premium support</li>
+                                    <li>Billed annually</li>
+                                </ul>
+                                <div class="btn-wrap">
+                                    <a href="https://handsomewp.com/handsome-checkout/ocu-2a/" class="btn">Try Today</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plan-item-wrap active">
+                            <div class="plan-item">
+                                <h4 class="plan-heading">Pro</h4>
+                                <p class="plan-price">$<span class="priceItemJs" data-monthly="..." data-annually="12">12</span>/month</p>
+                                <ul class="plan-list">
+                                    <li>Use on 10 sites (not just 5)</li>
+                                    <li>All features included</li>
+                                    <li>Unlimited upsells & downsells</li>
+                                    <li>All updates and premium support</li>
+                                    <li>Billed annually</li>
+                                </ul>
+                                <div class="btn-wrap">
+                                    <a href="https://handsomewp.com/handsome-checkout/ocu-xa/" class="btn">Try Today</a>
+                                </div>
+                                <div class="img-holder">
+                                    <picture>
+                                        <source type="image/webp" srcset="assets/images/webp/bf-cc-logos.webp 1x, assets/images/2x/webp/bf-cc-logos@2x.webp 2x">
+                                        <source type="image/png" srcset="assets/images/bf-cc-logos.png 1x, assets/images/2x/bf-cc-logos@2x.png 2x">
+                                        <img src="assets/images/bf-cc-logos.png" alt="checkout-img" class="img-fluid">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plan-item-wrap plan-agency">
+                            <div class="plan-item">
+                                <h4 class="plan-heading">Agency</h4>
+                                <p class="plan-price">$<span class="priceItemJs" data-monthly="33" data-annually="25">25</span>/month</p>
+                                <ul class="plan-list">
+                                    <li>Use on UNLIMITED sites</li>
+                                    <li>All features included</li>
+                                    <li>Unlimited upsells & downsells</li>
+                                    <li>All updates and premium support</li>
+                                    <li>Billed <span class="annually-text">annually</span><u class="monthly-text">monthly</u>
+                                    </li>
+                                </ul>
+                                <div class="btn-wrap">
+                                    <a href="https://handsomewp.com/handsome-checkout/ocu-ua/" class="btn planUpsellsAgencyBtn">Try Today</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-holder">
+                        <p class="row-1 bold">You Are 100% Protected By Our <span class="primary">No Risk Money Back Guarantee.</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="section section-testimonials dark-bg">
+            <div class="container">
+                <h2 class="section-title">What Other <span class="primary">Woocommerce</span> Store Owners Are Saying...</h2>
+                <div class="inner-wrap">
+                    <!-- 1 -->
+                    <div class="quote-item">
+                        <div class="icon-wrap">
+                            <svg class="quote-ico"><use xlink:href="#quote"></use></svg>
+                        </div>
+                        <div class="quote-wrap">
+                            <div class="quote">
+                                <p class="quote-title">“Takes one or two sales to cover the cost...“</p>
+                                <blockquote>“One Click Upsells only takes one or two sales to cover the cost of the plugin, and if you take 10 minutes to set it up, you'll be getting a lot more than one or two extra sales a month. If you're selling a product online, this plugin WILL increase your profits. The people behind it will make sure of that.”</blockquote>
+                            </div>
+                            <div class="author">
+                                <picture>
+                                    <source srcset="./assets/images/2x/webp/jake-andersen@2x.webp 2x, ./assets/images/webp/jake-andersen.webp 1x" type="image/webp">
+                                    <source srcset="./assets/images/2x/jake-andersen@2x.png 2x, ./assets/images/jake-andersen.png 1x" type="image/png">
+                                    <img src="./assets/images/jake-andersen.png" alt="jake-andersen" loading="lazy" class="img-fluid">
+                                </picture>
+                                <div class="author-info">
+                                    <h4 class="author-title">JAKE ANDERSEN</h4>
+                                    <p>Hobo Hammocks</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="quote-item">
+                        <div class="icon-wrap">
+                            <svg class="quote-ico"><use xlink:href="#quote"></use></svg>
+                        </div>
+                        <div class="quote-wrap">
+                            <div class="quote">
+                                <p class="quote-title">“Sales jumped over 100%...“</p>
+                                <blockquote>“Our sales jumped over 100% as soon as we started using Handsome Checkout and One Click Upsells. Total game changer for our business.“</blockquote>
+                            </div>
+                            <div class="author">
+                                <picture>
+                                    <source srcset="./assets/images/2x/webp/rudy-mawer@2x.webp 2x, ./assets/images/webp/rudy-mawer.webp 1x" type="image/webp">
+                                    <source srcset="./assets/images/2x/rudy-mawer@2x.png 2x, ./assets/images/rudy-mawer.png 1x" type="image/png">
+                                    <img src="./assets/images/rudy-mawer.png" alt="rudy-mawer" loading="lazy" class="img-fluid">
+                                </picture>
+                                <div class="author-info">
+                                    <h4 class="author-title">RUDY MAWER</h4>
+                                    <p>Elite Sports Nutritionist and Trainer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="quote-item">
+                        <div class="icon-wrap">
+                            <svg class="quote-ico"><use xlink:href="#quote"></use></svg>
+                        </div>
+                        <div class="quote-wrap">
+                            <div class="quote">
+                                <p class="quote-title">“10% increase in checkout totals.“</p>
+                                <blockquote>“We've tried several products that claim to provide true 'one click' upsells but all were lacking in function. Unlike others this plugin works right out of the box. We've seen a 10% increase in checkout totals. We've also been able to unload products that have been difficult to sell. It has been invaluable.“</blockquote>
+                            </div>
+                            <div class="author">
+                                <picture>
+                                    <source srcset="./assets/images/2x/webp/rachel-reese@2x.webp 2x, ./assets/images/webp/rachel-reese.webp 1x" type="image/webp">
+                                    <source srcset="./assets/images/2x/rachel-reese@2x.png 2x, ./assets/images/rachel-reese.png 1x" type="image/png">
+                                    <img src="./assets/images/rachel-reese.png" alt="rachel-reese" loading="lazy" class="img-fluid">
+                                </picture>
+                                <div class="author-info">
+                                    <h4 class="author-title">RACHEL REESE</h4>
+                                    <p>Search Bank (SBSS)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="quote-item">
+                        <div class="icon-wrap">
+                            <svg class="quote-ico"><use xlink:href="#quote"></use></svg>
+                        </div>
+                        <div class="quote-wrap">
+                            <div class="quote">
+                                <p class="quote-title">“10% increase in checkout totals.“</p>
+                                <blockquote>“Extremely easy to setup. It only took a couple of minutes after installing. Everything has been great and smooth. Support has been excellent!”</blockquote>
+                            </div>
+                            <div class="author">
+                                <picture>
+                                    <source srcset="./assets/images/2x/webp/david-olivares@2x.webp 2x, ./assets/images/webp/david-olivares.webp 1x" type="image/webp">
+                                    <source srcset="./assets/images/2x/david-olivares@2x.png 2x, ./assets/images/david-olivares.png 1x" type="image/png">
+                                    <img src="./assets/images/david-olivares.png" alt="david-olivares" loading="lazy" class="img-fluid">
+                                </picture>
+                                <div class="author-info">
+                                    <h4 class="author-title">David Olivares</h4>
+                                    <p>Shockdav Production</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="quote-item">
+                        <div class="icon-wrap">
+                            <svg class="quote-ico"><use xlink:href="#quote"></use></svg>
+                        </div>
+                        <div class="quote-wrap">
+                            <div class="quote">
+                                <p class="quote-title">“Priceless.“</p>
+                                <blockquote>“We installed the plugin, set up two upsells for two different products and it was amazing to see the sales increase. We had about 25% of our customers taking our upsells! This helped boost our monthly revenue substantially. Just having the ability to put beautiful, functional one time offers in front of a customer that just purchased is priceless.”</blockquote>
+                            </div>
+                            <div class="author">
+                                <picture>
+                                    <source srcset="./assets/images/2x/webp/sterling-chase@2x.webp 2x, ./assets/images/webp/sterling-chase.webp 1x" type="image/webp">
+                                    <source srcset="./assets/images/2x/sterling-chase@2x.png 2x, ./assets/images/sterling-chase.png 1x" type="image/png">
+                                    <img src="./assets/images/sterling-chase.png" alt="sterling-chase" loading="lazy" class="img-fluid">
+                                </picture>
+                                <div class="author-info">
+                                    <h4 class="author-title">Sterling Chase</h4>
+                                    <p>Chase Bros</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="quote-item">
+                        <div class="icon-wrap">
+                            <svg class="quote-ico"><use xlink:href="#quote"></use></svg>
+                        </div>
+                        <div class="quote-wrap">
+                            <div class="quote">
+                                <p class="quote-title">“…Support is some of the best in the WooCommerce industry…”</p>
+                                <blockquote>“One Click Upsells has improved our overall conversions by 13%, constantly, week after week. And the support is some of the best in the WooCommerce industry.”</blockquote>
+                            </div>
+                            <div class="author">
+                                <picture>
+                                    <source srcset="./assets/images/2x/webp/milosh-nikodijevic@2x.webp 2x, ./assets/images/webp/milosh-nikodijevic.webp 1x" type="image/webp">
+                                    <source srcset="./assets/images/2x/milosh-nikodijevic@2x.png 2x, ./assets/images/milosh-nikodijevic.png 1x" type="image/png">
+                                    <img src="./assets/images/milosh-nikodijevic.png" alt="milosh-nikodijevic" loading="lazy" class="img-fluid">
+                                </picture>
+                                <div class="author-info">
+                                    <h4 class="author-title">Milosh Nikodijevic</h4>
+                                    <p>Golden Hippo Media</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-wrap">
+                    <a href="#pricing" class="btn">Get Started Today</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-faqs">
+            <div class="container">
+                <h2 class="section-title">FAQS</h2>
+                <div class="inner-wrap">
+                    <div class="faq-item active">
+                        <div class="faq-question">
+                            <p class="faq-title">Does this work with other shopping carts?</p>
+                            <span class="faq-icon">
+                                <svg class="arrow-ico"><use xlink:href="#arrow"></use></svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>No. We built this to work seamlessly with WooCommerce.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <p class="faq-title">What happens if my customer leaves during one of the upsells or downsells and doesn't reach the "Thank You Page"?</p>
+                            <span class="faq-icon">
+                                <svg class="arrow-ico"><use xlink:href="#arrow"></use></svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Great question. You don't have to worry about this. The initial order and all accepted upsells or downsell offers are charged. You won't lose those. And your customer will receive an email confirmation from your store as usual.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <p class="faq-title">What payment gateways do you support?</p>
+                            <span class="faq-icon">
+                                <svg class="arrow-ico"><use xlink:href="#arrow"></use></svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We support these official WooCommerce gateways: Stripe, PayPal Express, Payflow Pro, Braintree, Authorize.net CIM, Cash on Delivery, Bank Account Transfer.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <p class="faq-title">How is this different from other products that show similar product during checkout?</p>
+                            <span class="faq-icon">
+                                <svg class="arrow-ico"><use xlink:href="#arrow"></use></svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Showing similar products during the checkout process is a good idea. It's what McDonalds does when they ask "do you want fries with that?"</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <p class="faq-title">Is shipping calculated on the upsells?</p>
+                            <span class="faq-icon">
+                                <svg class="arrow-ico"><use xlink:href="#arrow"></use></svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You have three options for this. You can charge a flat rate for each specific upsell or downsell. You can apply the same shipping rate as the parent product or you can offer free shipping.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <p class="faq-title">I'm using your Order Bump feature with Handsome Checkout to offer upsells on the checkout page. Do I really need One Click Upsells? Isn't that duplicating efforts?</p>
+                            <span class="faq-icon">
+                                <svg class="arrow-ico"><use xlink:href="#arrow"></use></svg>
+                            </span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The Order Bump feature that comes with Handsome Checkout is great but you will be limited in how much you can charge for an Order Bump product. With One Click Upsells you have more space to sell your upsell product and demonstrate why it's so great. This means you can offer it at a higher price. We recommend Order Bumps with One Click Upsells.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-wrap">
+                    <a href="#pricing" class="btn">Get Started Today</a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <a href="mailto:support@capitalandgrowth.org" class="logo">
+                    <svg class="mail-ico"><use xlink:href="#mail-ico"></use></svg>
+                    <span class="mail-description">Contact Us</span>
+                    <span class="mail-name">support@capitalandgrowth.org</span>
+                </a>
+            </div>
+            <div class="subsidiary">
+                <div class="container">
+                    <p class="bold">ConversionMagic™ is not affiliated with WooCommmerce, Wordpress or Automattic. Conversion Magic™ is an affiliate of WooCart and the custom high-performance hosting packages for WooCommerce are offered through WooCart at a 20% discount i.e. we pass on to our customers, what would otherwise be our affiliate commission.</p>
+                    <p>To qualify for the $1,000 guarantee, you need to be generating at least 30 transactions per month and NOT currently using post purchase 1-click upsells nor custom checkout pages. You must also use the custom WooCommerce hosting that we offer.</p>
+                </div>
+            </div>
+        </footer>
+
+        <div class="main_svg" hidden>
+            <svg>
+                <defs>
+                    <symbol id="quote" viewBox="0 0 50 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.2609 26.3642C21.0276 27.453 20.4055 27.9974 19.3944 27.9974H2.01273C1.39056 27.9974 0.962823 27.8224 0.729512 27.4724C0.4962 27.1225 0.457315 26.6364 0.612856 26.0142L9.01207 1.39987C9.32316 0.466623 9.98421 0 10.9952 0H24.0607C25.3828 0 25.9272 0.622164 25.6939 1.86649L21.2609 26.3642ZM45.292 26.3642C45.1365 27.453 44.5143 27.9974 43.4255 27.9974H26.0438C25.4217 27.9974 24.9939 27.8224 24.7606 27.4724C24.5273 27.1225 24.4884 26.6364 24.644 26.0142L32.8099 1.39987C33.1209 0.466623 33.782 0 34.793 0H47.9751C49.2194 0 49.725 0.622164 49.4916 1.86649L45.292 26.3642Z" fill="#FFC230"></path>
+                    </symbol>
+                    <symbol id="lock" width="48" height="57" viewBox="0 0 48 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.061 0.499937C23.5776 0.484849 23.107 0.657169 22.7476 0.980894C22.7476 0.980894 13.3627 9.24994 2.125 9.24994C1.62773 9.24999 1.15085 9.44755 0.79923 9.79917C0.44761 10.1508 0.25005 10.6277 0.25 11.1249V26.4496C0.25 34.7972 4.11177 48.5329 23.2725 56.6035C23.5028 56.7004 23.7501 56.7503 24 56.7503C24.2499 56.7503 24.4972 56.7004 24.7275 56.6035C43.8882 48.5329 47.75 34.7972 47.75 26.4496V11.1249C47.75 10.6277 47.5524 10.1508 47.2008 9.79917C46.8491 9.44755 46.3723 9.24999 45.875 9.24994C34.6373 9.24994 25.2524 0.980894 25.2524 0.980894C24.9243 0.685279 24.5024 0.514956 24.061 0.499937ZM24 4.78461C26.5787 6.85789 34.1391 12.1714 44 12.8437V26.4496C44 33.6275 41.2418 45.207 24 52.7827C6.7582 45.207 4 33.6275 4 26.4496V12.8437C13.8609 12.1714 21.4213 6.85789 24 4.78461ZM24 12.9999C19.8802 12.9999 16.5 16.3801 16.5 20.4999V23.3491C14.3295 24.1313 12.75 26.1999 12.75 28.6249V34.8749C12.75 37.9593 15.2906 40.4999 18.375 40.4999H29.625C32.7094 40.4999 35.25 37.9593 35.25 34.8749V28.6249C35.25 26.1999 33.6705 24.1313 31.5 23.3491V20.4999C31.5 16.3801 28.1198 12.9999 24 12.9999ZM24 16.7499C26.0927 16.7499 27.75 18.4073 27.75 20.4999V22.9999H20.25V20.4999C20.25 18.4073 21.9073 16.7499 24 16.7499ZM18.375 26.7499H29.625C30.6831 26.7499 31.5 27.5668 31.5 28.6249V34.8749C31.5 35.9331 30.6831 36.7499 29.625 36.7499H18.375C17.3169 36.7499 16.5 35.9331 16.5 34.8749V28.6249C16.5 27.5668 17.3169 26.7499 18.375 26.7499ZM24 29.2499C23.337 29.2499 22.7011 29.5133 22.2322 29.9822C21.7634 30.451 21.5 31.0869 21.5 31.7499C21.5 32.413 21.7634 33.0489 22.2322 33.5177C22.7011 33.9865 23.337 34.2499 24 34.2499C24.663 34.2499 25.2989 33.9865 25.7678 33.5177C26.2366 33.0489 26.5 32.413 26.5 31.7499C26.5 31.0869 26.2366 30.451 25.7678 29.9822C25.2989 29.5133 24.663 29.2499 24 29.2499Z" fill="#FFC230"/>
+                    </symbol>
+                    <symbol id="translation" width="57" height="53" viewBox="0 0 57 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.9561 0.835938C8.36151 0.835938 0.541504 8.65466 0.541504 18.2505C0.541504 21.0059 1.267 23.5754 2.40918 25.8921L0.644043 32.2178C0.0996381 34.1637 2.04258 36.1083 3.98877 35.5649L10.3193 33.7974C12.6355 34.9385 15.2034 35.6626 17.9561 35.6626C27.5506 35.6626 35.3706 27.8439 35.3706 18.248C35.3692 8.65365 27.5517 0.835938 17.9561 0.835938ZM17.9561 4.58594C25.5254 4.58594 31.6195 10.6824 31.6206 18.2505C31.6192 25.8185 25.5232 31.9126 17.9561 31.9126C15.5408 31.9126 13.2891 31.2862 11.3203 30.189C10.8889 29.9485 10.3801 29.888 9.9043 30.0205L4.74805 31.4585L6.18604 26.3071C6.31929 25.8317 6.25963 25.3229 6.02002 24.8911C4.92128 22.9204 4.2915 20.6674 4.2915 18.2505C4.2915 10.6813 10.3881 4.58594 17.9561 4.58594ZM17.9707 9.52734C17.4738 9.53511 17.0004 9.73976 16.6543 10.0964C16.3083 10.453 16.1179 10.9323 16.125 11.4292V12.0542H12.375C12.1265 12.0507 11.8799 12.0966 11.6493 12.1892C11.4187 12.2819 11.2089 12.4194 11.0319 12.5939C10.855 12.7684 10.7145 12.9762 10.6186 13.2055C10.5227 13.4347 10.4733 13.6807 10.4733 13.9292C10.4733 14.1777 10.5227 14.4237 10.6186 14.6529C10.7145 14.8822 10.855 15.09 11.0319 15.2645C11.2089 15.439 11.4187 15.5765 11.6493 15.6692C11.8799 15.7618 12.1265 15.8077 12.375 15.8042H17.707C17.9011 15.8349 18.0989 15.8349 18.293 15.8042H19.0742C18.9128 17.3064 18.6086 18.6837 17.9829 19.6567C17.185 18.8269 16.4741 17.9502 16.4741 17.9502C16.3496 17.7323 16.1827 17.5417 15.9831 17.3895C15.7836 17.2374 15.5556 17.1268 15.3125 17.0644C15.0695 17.002 14.8164 16.989 14.5682 17.0261C14.3201 17.0633 14.0819 17.1499 13.8678 17.2808C13.6538 17.4117 13.4681 17.5842 13.322 17.7882C13.1758 17.9921 13.072 18.2233 13.0168 18.4681C12.9616 18.7129 12.9561 18.9663 13.0006 19.2132C13.0451 19.4601 13.1387 19.6957 13.2759 19.9058C13.2759 19.9058 14.1206 20.929 14.6821 21.666C14.0123 21.826 13.4649 22.0542 12.4995 22.0542C12.2511 22.0507 12.0044 22.0966 11.7738 22.1892C11.5432 22.2819 11.3334 22.4194 11.1564 22.5939C10.9795 22.7684 10.839 22.9762 10.7431 23.2055C10.6472 23.4347 10.5978 23.6807 10.5978 23.9292C10.5978 24.1777 10.6472 24.4237 10.7431 24.6529C10.839 24.8822 10.9795 25.09 11.1564 25.2645C11.3334 25.439 11.5432 25.5765 11.7738 25.6692C12.0044 25.7618 12.2511 25.8077 12.4995 25.8042C14.6632 25.8042 16.447 25.2909 17.9438 24.498C19.2067 25.2311 20.6348 25.8042 22.375 25.8042C22.6235 25.8077 22.8701 25.7618 23.1007 25.6692C23.3313 25.5765 23.5411 25.439 23.7181 25.2645C23.895 25.09 24.0355 24.8822 24.1314 24.6529C24.2273 24.4237 24.2767 24.1777 24.2767 23.9292C24.2767 23.6807 24.2273 23.4347 24.1314 23.2055C24.0355 22.9762 23.895 22.7684 23.7181 22.5939C23.5411 22.4194 23.3313 22.2819 23.1007 22.1892C22.8701 22.0966 22.6235 22.0507 22.375 22.0542C21.9435 22.0542 21.5392 21.8324 21.1226 21.6904C22.281 19.895 22.6738 17.8496 22.8291 15.8042H23.625C23.8735 15.8077 24.1201 15.7618 24.3507 15.6692C24.5813 15.5765 24.7911 15.439 24.9681 15.2645C25.145 15.09 25.2855 14.8822 25.3814 14.6529C25.4773 14.4237 25.5267 14.1777 25.5267 13.9292C25.5267 13.6807 25.4773 13.4347 25.3814 13.2055C25.2855 12.9762 25.145 12.7684 24.9681 12.5939C24.7911 12.4194 24.5813 12.2819 24.3507 12.1892C24.1201 12.0966 23.8735 12.0507 23.625 12.0542H21.4351C21.2306 12.0201 21.0219 12.0201 20.8174 12.0542H19.875V11.4292C19.8786 11.1782 19.8318 10.9291 19.7373 10.6966C19.6429 10.4641 19.5027 10.2529 19.3251 10.0755C19.1475 9.89814 18.9361 9.75823 18.7035 9.66407C18.4708 9.56992 18.2217 9.52342 17.9707 9.52734ZM41.1128 15.7969C40.6309 15.808 40.1718 16.0042 39.8307 16.3449C39.4897 16.6856 39.293 17.1445 39.2813 17.6263C39.2697 18.1082 39.4441 18.5761 39.7683 18.9328C40.0925 19.2895 40.5417 19.5077 41.0225 19.542C47.1051 19.9939 51.064 23.6386 51.064 29.8887C51.0639 29.9343 51.0656 29.9799 51.0688 30.0254L51.2886 33.0161C51.3131 33.35 51.4266 33.6712 51.6172 33.9464C51.8078 34.2216 52.0686 34.4407 52.3726 34.5811C52.8165 34.7863 53.0024 35.0729 53.0024 35.8384C53.0024 36.6111 52.3887 37.2379 51.5254 37.2568C51.4818 37.2566 51.4908 37.2568 51.4302 37.2568C51.0011 37.2568 50.5851 37.4039 50.2514 37.6736C49.9178 37.9433 49.6867 38.3193 49.5967 38.7388C48.1994 45.2298 44.4071 48.2773 39.8774 48.2773C35.3481 48.2773 31.553 45.2285 30.1558 38.7388C30.104 38.498 30.0053 38.2698 29.8653 38.0671C29.7253 37.8645 29.5468 37.6914 29.3399 37.5578C29.1331 37.4241 28.9019 37.3325 28.6596 37.2882C28.4174 37.2439 28.1688 37.2478 27.928 37.2996C27.6872 37.3513 27.459 37.45 27.2563 37.59C27.0537 37.73 26.8806 37.9085 26.747 38.1154C26.6133 38.3223 26.5218 38.5534 26.4774 38.7957C26.4331 39.0379 26.437 39.2866 26.4888 39.5273C28.1515 47.2501 33.5468 52.0273 39.8774 52.0273C45.8371 52.0273 50.8492 47.6887 52.8169 40.748C55.0393 40.1542 56.7524 38.2328 56.7524 35.8384C56.7524 34.439 56.0367 33.1411 54.9849 32.147L54.8091 29.752L54.814 29.8887C54.814 21.9062 48.9132 16.3698 41.3008 15.8042C41.2383 15.7986 41.1755 15.7962 41.1128 15.7969ZM39.8188 23.2261C39.805 23.2275 39.7912 23.2292 39.7773 23.231C39.3761 23.25 38.9915 23.3974 38.6804 23.6514C38.3692 23.9055 38.1478 24.2528 38.0488 24.6421L33.1343 36.9297C33.0358 37.1596 32.9844 37.4069 32.9829 37.6569C32.9815 37.907 33.0301 38.1549 33.1259 38.3859C33.2216 38.6169 33.3626 38.8264 33.5406 39.0021C33.7186 39.1778 33.9299 39.3162 34.1621 39.409C34.3943 39.5018 34.6428 39.5473 34.8928 39.5426C35.1428 39.538 35.3894 39.4834 35.6181 39.3821C35.8467 39.2807 36.0527 39.1346 36.2241 38.9525C36.3954 38.7703 36.5286 38.5557 36.6157 38.3213L37.1431 37.0005H42.6069L43.1343 38.3213C43.2214 38.5557 43.3546 38.7703 43.5259 38.9525C43.6973 39.1346 43.9033 39.2807 44.1319 39.3821C44.3606 39.4834 44.6072 39.538 44.8572 39.5426C45.1072 39.5473 45.3557 39.5018 45.5879 39.409C45.8201 39.3162 46.0314 39.1778 46.2094 39.0021C46.3874 38.8264 46.5284 38.6169 46.6241 38.3859C46.7199 38.1549 46.7685 37.907 46.7671 37.6569C46.7656 37.4069 46.7142 37.1596 46.6157 36.9297L41.7012 24.647C41.607 24.2711 41.3987 23.9336 41.105 23.6809C40.8112 23.4282 40.4463 23.2727 40.0605 23.2358C40.0038 23.23 39.9467 23.2267 39.8896 23.2261C39.8799 23.226 39.8701 23.226 39.8604 23.2261C39.8465 23.2259 39.8327 23.2259 39.8188 23.2261ZM39.875 30.1743L41.1055 33.2505H38.6445L39.875 30.1743Z" fill="#FFC230"/>
+                    </symbol>
+                    <symbol id="order" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.625 6.25C12.5406 6.25 10 8.79062 10 11.875V41.25H8.125C7.62773 41.25 7.15085 41.4476 6.79923 41.7992C6.44761 42.1509 6.25005 42.6277 6.25 43.125V45.625C6.25 50.0899 9.91008 53.75 14.375 53.75H41.875C46.3399 53.75 50 50.0899 50 45.625V11.875C50 8.79062 47.4594 6.25 44.375 6.25H15.625ZM15.625 10H44.375C45.4331 10 46.25 10.8169 46.25 11.875V45.625C46.25 48.0626 44.3126 50 41.875 50C39.4374 50 37.5 48.0626 37.5 45.625V43.125C37.5 42.6277 37.3024 42.1509 36.9508 41.7992C36.5991 41.4476 36.1223 41.25 35.625 41.25H13.75V11.875C13.75 10.8169 14.5669 10 15.625 10ZM20.625 16.25C20.1277 16.25 19.6508 16.4475 19.2992 16.7992C18.9475 17.1508 18.75 17.6277 18.75 18.125C18.75 18.6223 18.9475 19.0992 19.2992 19.4508C19.6508 19.8025 20.1277 20 20.625 20C21.1223 20 21.5992 19.8025 21.9508 19.4508C22.3025 19.0992 22.5 18.6223 22.5 18.125C22.5 17.6277 22.3025 17.1508 21.9508 16.7992C21.5992 16.4475 21.1223 16.25 20.625 16.25ZM26.875 16.25C26.6265 16.2465 26.3799 16.2924 26.1493 16.385C25.9187 16.4777 25.7089 16.6152 25.5319 16.7897C25.355 16.9642 25.2145 17.172 25.1186 17.4013C25.0227 17.6305 24.9733 17.8765 24.9733 18.125C24.9733 18.3735 25.0227 18.6195 25.1186 18.8487C25.2145 19.078 25.355 19.2858 25.5319 19.4603C25.7089 19.6348 25.9187 19.7723 26.1493 19.865C26.3799 19.9576 26.6265 20.0035 26.875 20H39.375C39.6235 20.0035 39.8701 19.9576 40.1007 19.865C40.3313 19.7723 40.5411 19.6348 40.7181 19.4603C40.895 19.2858 41.0355 19.078 41.1314 18.8487C41.2273 18.6195 41.2767 18.3735 41.2767 18.125C41.2767 17.8765 41.2273 17.6305 41.1314 17.4013C41.0355 17.172 40.895 16.9642 40.7181 16.7897C40.5411 16.6152 40.3313 16.4777 40.1007 16.385C39.8701 16.2924 39.6235 16.2465 39.375 16.25H26.875ZM20.625 23.75C20.1277 23.75 19.6508 23.9475 19.2992 24.2992C18.9475 24.6508 18.75 25.1277 18.75 25.625C18.75 26.1223 18.9475 26.5992 19.2992 26.9508C19.6508 27.3025 20.1277 27.5 20.625 27.5C21.1223 27.5 21.5992 27.3025 21.9508 26.9508C22.3025 26.5992 22.5 26.1223 22.5 25.625C22.5 25.1277 22.3025 24.6508 21.9508 24.2992C21.5992 23.9475 21.1223 23.75 20.625 23.75ZM26.875 23.75C26.6265 23.7465 26.3799 23.7924 26.1493 23.885C25.9187 23.9777 25.7089 24.1152 25.5319 24.2897C25.355 24.4642 25.2145 24.672 25.1186 24.9013C25.0227 25.1305 24.9733 25.3765 24.9733 25.625C24.9733 25.8735 25.0227 26.1195 25.1186 26.3487C25.2145 26.578 25.355 26.7858 25.5319 26.9603C25.7089 27.1348 25.9187 27.2723 26.1493 27.365C26.3799 27.4576 26.6265 27.5035 26.875 27.5H39.375C39.6235 27.5035 39.8701 27.4576 40.1007 27.365C40.3313 27.2723 40.5411 27.1348 40.7181 26.9603C40.895 26.7858 41.0355 26.578 41.1314 26.3487C41.2273 26.1195 41.2767 25.8735 41.2767 25.625C41.2767 25.3765 41.2273 25.1305 41.1314 24.9013C41.0355 24.672 40.895 24.4642 40.7181 24.2897C40.5411 24.1152 40.3313 23.9777 40.1007 23.885C39.8701 23.7924 39.6235 23.7465 39.375 23.75H26.875ZM20.625 31.25C20.1277 31.25 19.6508 31.4475 19.2992 31.7992C18.9475 32.1508 18.75 32.6277 18.75 33.125C18.75 33.6223 18.9475 34.0992 19.2992 34.4508C19.6508 34.8025 20.1277 35 20.625 35C21.1223 35 21.5992 34.8025 21.9508 34.4508C22.3025 34.0992 22.5 33.6223 22.5 33.125C22.5 32.6277 22.3025 32.1508 21.9508 31.7992C21.5992 31.4475 21.1223 31.25 20.625 31.25ZM26.875 31.25C26.6265 31.2465 26.3799 31.2924 26.1493 31.385C25.9187 31.4777 25.7089 31.6152 25.5319 31.7897C25.355 31.9642 25.2145 32.172 25.1186 32.4013C25.0227 32.6305 24.9733 32.8765 24.9733 33.125C24.9733 33.3735 25.0227 33.6195 25.1186 33.8487C25.2145 34.078 25.355 34.2858 25.5319 34.4603C25.7089 34.6348 25.9187 34.7723 26.1493 34.865C26.3799 34.9576 26.6265 35.0035 26.875 35H39.375C39.6235 35.0035 39.8701 34.9576 40.1007 34.865C40.3313 34.7723 40.5411 34.6348 40.7181 34.4603C40.895 34.2858 41.0355 34.078 41.1314 33.8487C41.2273 33.6195 41.2767 33.3735 41.2767 33.125C41.2767 32.8765 41.2273 32.6305 41.1314 32.4013C41.0355 32.172 40.895 31.9642 40.7181 31.7897C40.5411 31.6152 40.3313 31.4777 40.1007 31.385C39.8701 31.2924 39.6235 31.2465 39.375 31.25H26.875ZM10 45H33.75V45.625C33.75 47.2688 34.3676 48.7169 35.2173 50H14.375C11.9374 50 10 48.0626 10 45.625V45Z" fill="#FFC230"/>
+                    </symbol>
+                    <symbol id="remove-property" width="52" height="51" viewBox="0 0 52 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.125 0.5C3.33375 0.5 0.25 3.585 0.25 7.375V38.625C0.25 42.415 3.33375 45.5 7.125 45.5H24.0708C23.3283 44.34 22.7247 43.0838 22.2935 41.7476H7.125C5.4025 41.7476 4 40.3463 4 38.6226V12.9976H44V21.7476C45.355 22.3138 46.61 23.067 47.75 23.9595V7.375C47.75 3.585 44.6662 0.5 40.875 0.5H7.125ZM10.875 18C10.6265 17.9965 10.3799 18.0424 10.1493 18.135C9.91873 18.2277 9.70888 18.3652 9.53193 18.5397C9.35499 18.7142 9.21449 18.922 9.11858 19.1513C9.02268 19.3805 8.9733 19.6265 8.9733 19.875C8.9733 20.1235 9.02268 20.3695 9.11858 20.5987C9.21449 20.828 9.35499 21.0358 9.53193 21.2103C9.70888 21.3848 9.91873 21.5223 10.1493 21.615C10.3799 21.7076 10.6265 21.7535 10.875 21.75H13.375C13.6235 21.7535 13.8701 21.7076 14.1007 21.615C14.3313 21.5223 14.5411 21.3848 14.7181 21.2103C14.895 21.0358 15.0355 20.828 15.1314 20.5987C15.2273 20.3695 15.2767 20.1235 15.2767 19.875C15.2767 19.6265 15.2273 19.3805 15.1314 19.1513C15.0355 18.922 14.895 18.7142 14.7181 18.5397C14.5411 18.3652 14.3313 18.2277 14.1007 18.135C13.8701 18.0424 13.6235 17.9965 13.375 18H10.875ZM20.875 18C19.84 18 19 18.8388 19 19.875C19 20.9112 19.84 21.75 20.875 21.75H31.4976C33.4226 20.9463 35.5337 20.5 37.75 20.5C38.1275 20.5 38.4969 20.5312 38.8682 20.5562C38.9507 20.3449 39 20.1162 39 19.875C39 18.8388 38.16 18 37.125 18H20.875ZM37.75 23C30.1562 23 24 29.1562 24 36.75C24 44.3438 30.1562 50.5 37.75 50.5C45.3438 50.5 51.5 44.3438 51.5 36.75C51.5 29.1562 45.3438 23 37.75 23ZM10.875 25.5C10.6265 25.4965 10.3799 25.5424 10.1493 25.635C9.91873 25.7277 9.70888 25.8652 9.53193 26.0397C9.35499 26.2142 9.21449 26.422 9.11858 26.6513C9.02268 26.8805 8.9733 27.1265 8.9733 27.375C8.9733 27.6235 9.02268 27.8695 9.11858 28.0987C9.21449 28.328 9.35499 28.5358 9.53193 28.7103C9.70888 28.8848 9.91873 29.0223 10.1493 29.115C10.3799 29.2076 10.6265 29.2535 10.875 29.25H13.375C13.6235 29.2535 13.8701 29.2076 14.1007 29.115C14.3313 29.0223 14.5411 28.8848 14.7181 28.7103C14.895 28.5358 15.0355 28.328 15.1314 28.0987C15.2273 27.8695 15.2767 27.6235 15.2767 27.375C15.2767 27.1265 15.2273 26.8805 15.1314 26.6513C15.0355 26.422 14.895 26.2142 14.7181 26.0397C14.5411 25.8652 14.3313 25.7277 14.1007 25.635C13.8701 25.5424 13.6235 25.4965 13.375 25.5H10.875ZM20.875 25.5C19.8388 25.5 19 26.3388 19 27.375C19 28.4112 19.8388 29.25 20.875 29.25H23.3433C24.062 27.8713 24.9735 26.6112 26.041 25.5H20.875ZM10.875 33C10.6265 32.9965 10.3799 33.0424 10.1493 33.135C9.91873 33.2277 9.70888 33.3652 9.53193 33.5397C9.35499 33.7142 9.21449 33.922 9.11858 34.1513C9.02268 34.3805 8.9733 34.6265 8.9733 34.875C8.9733 35.1235 9.02268 35.3695 9.11858 35.5987C9.21449 35.828 9.35499 36.0358 9.53193 36.2103C9.70888 36.3848 9.91873 36.5223 10.1493 36.615C10.3799 36.7076 10.6265 36.7535 10.875 36.75H13.375C13.6235 36.7535 13.8701 36.7076 14.1007 36.615C14.3313 36.5223 14.5411 36.3848 14.7181 36.2103C14.895 36.0358 15.0355 35.828 15.1314 35.5987C15.2273 35.3695 15.2767 35.1235 15.2767 34.875C15.2767 34.6265 15.2273 34.3805 15.1314 34.1513C15.0355 33.922 14.895 33.7142 14.7181 33.5397C14.5411 33.3652 14.3313 33.2277 14.1007 33.135C13.8701 33.0424 13.6235 32.9965 13.375 33H10.875ZM20.875 33C19.8388 33 19 33.8387 19 34.875C19 35.9113 19.8388 36.75 20.875 36.75H21.5C21.5 35.4575 21.6667 34.2062 21.9517 33H20.875ZM29 35.5H46.5C47.19 35.5 47.75 36.06 47.75 36.75C47.75 37.44 47.19 38 46.5 38H29C28.31 38 27.75 37.44 27.75 36.75C27.75 36.06 28.31 35.5 29 35.5Z" fill="#FFC230"/>
+                    </symbol>
+                    <symbol id="performance-goal" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M45.5957 1.22289C45.0989 1.23065 44.6254 1.4353 44.2793 1.7919C43.9333 2.1485 43.7429 2.62788 43.75 3.12474V4.1306C39.4568 4.93277 36.183 8.20658 35.3809 12.4997H34.375C34.1265 12.4962 33.8799 12.5421 33.6493 12.6348C33.4187 12.7274 33.2089 12.865 33.0319 13.0394C32.855 13.2139 32.7145 13.4218 32.6186 13.651C32.5227 13.8802 32.4733 14.1263 32.4733 14.3747C32.4733 14.6232 32.5227 14.8692 32.6186 15.0985C32.7145 15.3277 32.855 15.5356 33.0319 15.71C33.2089 15.8845 33.4187 16.0221 33.6493 16.1147C33.8799 16.2074 34.1265 16.2533 34.375 16.2497H35.3809C36.183 20.5429 39.4568 23.8167 43.75 24.6189V25.6247C43.7465 25.8732 43.7924 26.1199 43.885 26.3504C43.9777 26.581 44.1152 26.7909 44.2897 26.9678C44.4642 27.1448 44.672 27.2853 44.9013 27.3812C45.1305 27.4771 45.3765 27.5264 45.625 27.5264C45.8735 27.5264 46.1195 27.4771 46.3487 27.3812C46.578 27.2853 46.7858 27.1448 46.9603 26.9678C47.1348 26.7909 47.2723 26.581 47.365 26.3504C47.4576 26.1199 47.5035 25.8732 47.5 25.6247V24.6189C51.7932 23.8167 55.067 20.5429 55.8691 16.2497H56.875C57.1235 16.2533 57.3701 16.2074 57.6007 16.1147C57.8313 16.0221 58.0411 15.8845 58.2181 15.71C58.395 15.5356 58.5355 15.3277 58.6314 15.0985C58.7273 14.8692 58.7767 14.6232 58.7767 14.3747C58.7767 14.1263 58.7273 13.8802 58.6314 13.651C58.5355 13.4218 58.395 13.2139 58.2181 13.0394C58.0411 12.865 57.8313 12.7274 57.6007 12.6348C57.3701 12.5421 57.1235 12.4962 56.875 12.4997H55.8691C55.067 8.20658 51.7932 4.93277 47.5 4.1306V3.12474C47.5036 2.87378 47.4568 2.62466 47.3623 2.39213C47.2679 2.1596 47.1277 1.94839 46.9501 1.77104C46.7725 1.59368 46.5611 1.45377 46.3285 1.35962C46.0958 1.26546 45.8467 1.21896 45.5957 1.22289ZM43.75 7.87572V9.99974C43.7465 10.2482 43.7924 10.4949 43.885 10.7254C43.9777 10.956 44.1152 11.1659 44.2897 11.3428C44.4642 11.5198 44.672 11.6603 44.9013 11.7562C45.1305 11.8521 45.3765 11.9014 45.625 11.9014C45.8735 11.9014 46.1195 11.8521 46.3487 11.7562C46.578 11.6603 46.7858 11.5198 46.9603 11.3428C47.1348 11.1659 47.2723 10.956 47.365 10.7254C47.4576 10.4949 47.5035 10.2482 47.5 9.99974V7.87572C49.7669 8.52465 51.4751 10.2329 52.124 12.4997H50C49.7515 12.4962 49.5049 12.5421 49.2743 12.6348C49.0437 12.7274 48.8339 12.865 48.6569 13.0394C48.48 13.2139 48.3395 13.4218 48.2436 13.651C48.1477 13.8802 48.0983 14.1263 48.0983 14.3747C48.0983 14.6232 48.1477 14.8692 48.2436 15.0985C48.3395 15.3277 48.48 15.5356 48.6569 15.71C48.8339 15.8845 49.0437 16.0221 49.2743 16.1147C49.5049 16.2074 49.7515 16.2533 50 16.2497H52.124C51.4751 18.5166 49.7669 20.2248 47.5 20.8738V18.7497C47.5035 18.5013 47.4576 18.2546 47.365 18.024C47.2723 17.7935 47.1348 17.5836 46.9603 17.4067C46.7858 17.2297 46.578 17.0892 46.3487 16.9933C46.1195 16.8974 45.8735 16.848 45.625 16.848C45.3765 16.848 45.1305 16.8974 44.9013 16.9933C44.672 17.0892 44.4642 17.2297 44.2897 17.4067C44.1152 17.5836 43.9777 17.7935 43.885 18.024C43.7924 18.2546 43.7465 18.5013 43.75 18.7497V20.8738C41.4831 20.2248 39.7749 18.5166 39.126 16.2497H41.25C41.4985 16.2533 41.7451 16.2074 41.9757 16.1147C42.2063 16.0221 42.4161 15.8845 42.5931 15.71C42.77 15.5356 42.9105 15.3277 43.0064 15.0985C43.1023 14.8692 43.1517 14.6232 43.1517 14.3747C43.1517 14.1263 43.1023 13.8802 43.0064 13.651C42.9105 13.4218 42.77 13.2139 42.5931 13.0394C42.4161 12.865 42.2063 12.7274 41.9757 12.6348C41.7451 12.5421 41.4985 12.4962 41.25 12.4997H39.126C39.7749 10.2329 41.4831 8.52465 43.75 7.87572ZM34.3384 23.7327C34.2714 23.7348 34.2046 23.7405 34.1382 23.7497H24.375C24.1265 23.7462 23.8799 23.7921 23.6493 23.8848C23.4187 23.9774 23.2089 24.115 23.0319 24.2894C22.855 24.4639 22.7145 24.6718 22.6186 24.901C22.5227 25.1302 22.4733 25.3763 22.4733 25.6247C22.4733 25.8732 22.5227 26.1192 22.6186 26.3485C22.7145 26.5777 22.855 26.7856 23.0319 26.96C23.2089 27.1345 23.4187 27.272 23.6493 27.3647C23.8799 27.4574 24.1265 27.5033 24.375 27.4997H29.8486L28.0493 29.2991C23.1598 34.1886 18.6008 37.6019 11.5674 38.7742C11.3244 38.8146 11.0917 38.9024 10.8826 39.0327C10.6735 39.1631 10.4922 39.3333 10.3489 39.5337C10.2056 39.7341 10.1032 39.9608 10.0476 40.2008C9.99188 40.4407 9.98402 40.6893 10.0244 40.9324C10.0648 41.1754 10.1527 41.4081 10.283 41.6171C10.4133 41.8262 10.5836 42.0075 10.784 42.1508C10.9844 42.2941 11.211 42.3965 11.451 42.4522C11.691 42.5079 11.9396 42.5157 12.1826 42.4753C20.1492 41.1476 25.5902 37.0609 30.7007 31.9504L32.5 30.1511V35.6247C32.4965 35.8732 32.5424 36.1199 32.635 36.3504C32.7277 36.581 32.8652 36.7909 33.0397 36.9678C33.2142 37.1447 33.422 37.2853 33.6513 37.3812C33.8805 37.4771 34.1265 37.5264 34.375 37.5264C34.6235 37.5264 34.8695 37.4771 35.0987 37.3812C35.328 37.2853 35.5358 37.1447 35.7103 36.9678C35.8848 36.7909 36.0223 36.581 36.115 36.3504C36.2076 36.1199 36.2535 35.8732 36.25 35.6247V25.842C36.2839 25.5738 36.2593 25.3013 36.178 25.0434C36.0968 24.7855 35.9607 24.5483 35.7791 24.3479C35.5975 24.1476 35.3747 23.9888 35.1261 23.8826C34.8774 23.7764 34.6087 23.7253 34.3384 23.7327ZM45.5957 30.5979C45.0989 30.6056 44.6254 30.8103 44.2793 31.1669C43.9333 31.5235 43.7429 32.0029 43.75 32.4997V54.3747C43.7465 54.6232 43.7924 54.8699 43.885 55.1004C43.9777 55.331 44.1152 55.5409 44.2897 55.7178C44.4642 55.8947 44.672 56.0353 44.9013 56.1312C45.1305 56.2271 45.3765 56.2764 45.625 56.2764C45.8735 56.2764 46.1195 56.2271 46.3487 56.1312C46.578 56.0353 46.7858 55.8947 46.9603 55.7178C47.1348 55.5409 47.2723 55.331 47.365 55.1004C47.4576 54.8699 47.5035 54.6232 47.5 54.3747V32.4997C47.5036 32.2488 47.4568 31.9997 47.3623 31.7671C47.2679 31.5346 47.1277 31.3234 46.9501 31.146C46.7725 30.9687 46.5611 30.8288 46.3285 30.7346C46.0958 30.6405 45.8467 30.594 45.5957 30.5979ZM34.3457 40.5979C33.8489 40.6056 33.3754 40.8103 33.0293 41.1669C32.6833 41.5235 32.4929 42.0029 32.5 42.4997V54.3747C32.4965 54.6232 32.5424 54.8699 32.635 55.1004C32.7277 55.331 32.8652 55.5409 33.0397 55.7178C33.2142 55.8947 33.422 56.0353 33.6513 56.1312C33.8805 56.2271 34.1265 56.2764 34.375 56.2764C34.6235 56.2764 34.8695 56.2271 35.0987 56.1312C35.328 56.0353 35.5358 55.8947 35.7103 55.7178C35.8848 55.5409 36.0223 55.331 36.115 55.1004C36.2076 54.8699 36.2535 54.6232 36.25 54.3747V42.4997C36.2536 42.2488 36.2068 41.9997 36.1123 41.7671C36.0179 41.5346 35.8777 41.3234 35.7001 41.146C35.5225 40.9687 35.3111 40.8288 35.0785 40.7346C34.8458 40.6405 34.5967 40.594 34.3457 40.5979ZM23.0957 45.5979C22.5989 45.6056 22.1254 45.8103 21.7793 46.1669C21.4333 46.5235 21.2429 47.0029 21.25 47.4997V54.3747C21.2465 54.6232 21.2924 54.8699 21.385 55.1004C21.4777 55.331 21.6152 55.5409 21.7897 55.7178C21.9642 55.8947 22.172 56.0353 22.4013 56.1312C22.6305 56.2271 22.8765 56.2764 23.125 56.2764C23.3735 56.2764 23.6195 56.2271 23.8487 56.1312C24.078 56.0353 24.2858 55.8947 24.4603 55.7178C24.6348 55.5409 24.7723 55.331 24.865 55.1004C24.9576 54.8699 25.0035 54.6232 25 54.3747V47.4997C25.0036 47.2488 24.9568 46.9997 24.8623 46.7671C24.7679 46.5346 24.6277 46.3234 24.4501 46.146C24.2725 45.9687 24.0611 45.8288 23.8285 45.7346C23.5958 45.6405 23.3467 45.594 23.0957 45.5979ZM11.8457 49.3479C11.3489 49.3556 10.8754 49.5603 10.5293 49.9169C10.1833 50.2735 9.99288 50.7529 10 51.2497V54.3747C9.99649 54.6232 10.0424 54.8699 10.135 55.1004C10.2277 55.331 10.3652 55.5409 10.5397 55.7178C10.7142 55.8947 10.922 56.0353 11.1513 56.1312C11.3805 56.2271 11.6265 56.2764 11.875 56.2764C12.1235 56.2764 12.3695 56.2271 12.5987 56.1312C12.828 56.0353 13.0358 55.8947 13.2103 55.7178C13.3848 55.5409 13.5223 55.331 13.615 55.1004C13.7076 54.8699 13.7535 54.6232 13.75 54.3747V51.2497C13.7536 50.9988 13.7068 50.7497 13.6123 50.5171C13.5179 50.2846 13.3777 50.0734 13.2001 49.896C13.0225 49.7187 12.8111 49.5788 12.5785 49.4846C12.3458 49.3905 12.0967 49.344 11.8457 49.3479Z" fill="#FFC230"/>
+                    </symbol>
+                    <symbol id="css-filetype" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.625 5C12.5406 5 10 7.54062 10 10.625V27.7612C8.62606 28.0874 7.5 29.1623 7.5 30.625V44.375C7.5 45.8377 8.62606 46.9126 10 47.2388V49.375C10 52.4594 12.5406 55 15.625 55H44.375C47.4594 55 50 52.4594 50 49.375V47.2388C51.3739 46.9126 52.5 45.8377 52.5 44.375V30.625C52.5 29.1623 51.3739 28.0874 50 27.7612V23.125C49.9999 22.6278 49.8023 22.1509 49.4507 21.7993L49.4312 21.7798L33.2007 5.54932C32.8491 5.19769 32.3722 5.0001 31.875 5H15.625ZM15.625 8.75H30V19.375C30 22.4594 32.5406 25 35.625 25H46.25V27.5H13.75V10.625C13.75 9.56688 14.5669 8.75 15.625 8.75ZM33.75 11.4014L43.5986 21.25H35.625C34.5669 21.25 33.75 20.4331 33.75 19.375V11.4014ZM11.25 31.25H48.75V43.75H11.25V31.25ZM21.6162 32.5C19.3475 32.5 17.5 34.7425 17.5 37.5C17.5 40.2575 19.3475 42.5 21.6162 42.5C23.4237 42.5 24.5046 41.2743 24.8584 40.5493C25.1621 39.9293 24.9059 39.1807 24.2847 38.877C23.6647 38.5745 22.9172 38.8307 22.6147 39.4507C22.6122 39.4557 22.315 40 21.6162 40C20.7562 40 20 38.8312 20 37.5C20 36.1688 20.7562 35 21.6162 35C22.2712 35 22.5658 35.4676 22.6245 35.5688C22.9333 36.1738 23.6734 36.423 24.2871 36.123C24.9071 35.8205 25.1646 35.0707 24.8608 34.4507C24.5071 33.7257 23.425 32.5 21.6162 32.5ZM29.5312 32.5C27.8088 32.5 26.4062 33.9025 26.4062 35.625C26.4062 37.3475 27.8088 38.75 29.5312 38.75H30.625C30.97 38.75 31.25 39.03 31.25 39.375C31.25 39.72 30.97 40 30.625 40H29.2603C28.8328 40 28.4813 39.6825 28.3838 39.585C27.895 39.0962 27.105 39.0962 26.6162 39.585C26.1275 40.0737 26.1275 40.8638 26.6162 41.3525C26.9612 41.6975 27.909 42.5 29.2603 42.5H30.625C32.3475 42.5 33.75 41.0975 33.75 39.375C33.75 37.6525 32.3475 36.25 30.625 36.25H29.5312C29.1863 36.25 28.9062 35.97 28.9062 35.625C28.9062 35.28 29.1863 35 29.5312 35H30.625C31.005 35 31.3037 35.2588 31.3037 35.2588C31.7925 35.7463 32.5825 35.7475 33.0713 35.2588C33.56 34.77 33.56 33.98 33.0713 33.4912C32.97 33.39 32.0387 32.5 30.625 32.5H29.5312ZM38.2812 32.5C36.5588 32.5 35.1562 33.9025 35.1562 35.625C35.1562 37.3475 36.5588 38.75 38.2812 38.75H39.375C39.72 38.75 40 39.03 40 39.375C40 39.72 39.72 40 39.375 40H38.0103C37.5828 40 37.2313 39.6825 37.1338 39.585C36.645 39.0962 35.855 39.0962 35.3662 39.585C34.8775 40.0737 34.8775 40.8638 35.3662 41.3525C35.7112 41.6975 36.659 42.5 38.0103 42.5H39.375C41.0975 42.5 42.5 41.0975 42.5 39.375C42.5 37.6525 41.0975 36.25 39.375 36.25H38.2812C37.9363 36.25 37.6562 35.97 37.6562 35.625C37.6562 35.28 37.9363 35 38.2812 35H39.375C39.755 35 40.0537 35.2588 40.0537 35.2588C40.5425 35.7463 41.3325 35.7475 41.8213 35.2588C42.31 34.77 42.31 33.98 41.8213 33.4912C41.72 33.39 40.7887 32.5 39.375 32.5H38.2812ZM13.75 47.5H46.25V49.375C46.25 50.4331 45.4331 51.25 44.375 51.25H15.625C14.5669 51.25 13.75 50.4331 13.75 49.375V47.5Z" fill="#FFC230"/>
+                    </symbol>
+                    <symbol id="smiling-browser" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.125 7.5C12.8881 7.5 12.6551 7.5131 12.4243 7.53662C11.9644 7.5835 11.5177 7.67666 11.0889 7.81006C8.93402 8.48031 7.23031 10.184 6.56006 12.3389C6.42666 12.7677 6.3335 13.2144 6.28662 13.6743C6.28654 13.6751 6.2867 13.676 6.28662 13.6768C6.26326 13.9068 6.25 14.1389 6.25 14.375V16.875V45.625C6.25 49.3997 9.35028 52.5 13.125 52.5H46.875C50.6497 52.5 53.75 49.3997 53.75 45.625V16.875V14.375C53.75 14.1383 53.7372 13.9052 53.7134 13.6743C53.6665 13.2144 53.5733 12.7677 53.4399 12.3389C52.7697 10.184 51.066 8.48031 48.9111 7.81006C48.4823 7.67666 48.0356 7.5835 47.5757 7.53662C47.5749 7.53654 47.574 7.5367 47.5732 7.53662C47.3432 7.51299 47.1109 7.5 46.875 7.5H13.125ZM13.125 11.25C14.16 11.25 15 12.09 15 13.125C15 14.16 14.16 15 13.125 15C12.09 15 11.25 14.16 11.25 13.125C11.25 12.09 12.09 11.25 13.125 11.25ZM19.375 11.25C20.41 11.25 21.25 12.09 21.25 13.125C21.25 14.16 20.41 15 19.375 15C18.34 15 17.5 14.16 17.5 13.125C17.5 12.09 18.34 11.25 19.375 11.25ZM26.875 11.25H46.875C47.91 11.25 48.75 12.09 48.75 13.125C48.75 14.16 47.91 15 46.875 15H26.875C25.84 15 25 14.16 25 13.125C25 12.09 25.84 11.25 26.875 11.25ZM10 18.75H50V45.625C50 47.3728 48.6228 48.75 46.875 48.75H13.125C11.3772 48.75 10 47.3728 10 45.625V18.75ZM22.5 23.75C21.6712 23.75 20.8763 24.0792 20.2903 24.6653C19.7042 25.2513 19.375 26.0462 19.375 26.875C19.375 27.7038 19.7042 28.4987 20.2903 29.0847C20.8763 29.6708 21.6712 30 22.5 30C23.3288 30 24.1237 29.6708 24.7097 29.0847C25.2958 28.4987 25.625 27.7038 25.625 26.875C25.625 26.0462 25.2958 25.2513 24.7097 24.6653C24.1237 24.0792 23.3288 23.75 22.5 23.75ZM37.5 23.75C36.6712 23.75 35.8763 24.0792 35.2903 24.6653C34.7042 25.2513 34.375 26.0462 34.375 26.875C34.375 27.7038 34.7042 28.4987 35.2903 29.0847C35.8763 29.6708 36.6712 30 37.5 30C38.3288 30 39.1237 29.6708 39.7097 29.0847C40.2958 28.4987 40.625 27.7038 40.625 26.875C40.625 26.0462 40.2958 25.2513 39.7097 24.6653C39.1237 24.0792 38.3288 23.75 37.5 23.75ZM19.7168 34.9805C19.3601 34.9745 19.0091 35.0704 18.705 35.257C18.4009 35.4435 18.1564 35.7129 18 36.0335C17.8437 36.3542 17.782 36.7128 17.8223 37.0672C17.8626 37.4217 18.0032 37.7573 18.2275 38.0347C20.9704 41.5204 25.2412 43.75 30 43.75C34.7588 43.75 39.0296 41.5204 41.7725 38.0347C41.9287 37.8416 42.0449 37.6194 42.1145 37.381C42.1842 37.1426 42.2057 36.8927 42.178 36.6459C42.1503 36.3991 42.0738 36.1603 41.953 35.9433C41.8322 35.7263 41.6695 35.5354 41.4743 35.3818C41.2791 35.2282 41.0554 35.1149 40.8161 35.0485C40.5768 34.9821 40.3267 34.9638 40.0803 34.9949C39.8339 35.0259 39.5961 35.1055 39.3807 35.2292C39.1653 35.3529 38.9767 35.5181 38.8257 35.7153C36.7686 38.3296 33.5912 40 30 40C26.4088 40 23.2314 38.3296 21.1743 35.7153C21.0025 35.4909 20.7821 35.3082 20.5297 35.181C20.2773 35.0537 19.9994 34.9852 19.7168 34.9805Z" fill="#FFC230"/>
+                    </symbol>
+                    <symbol id="checkout" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.37509 7.50019C4.12663 7.49667 3.87995 7.54258 3.64939 7.63523C3.41882 7.72788 3.20897 7.86543 3.03203 8.03989C2.85508 8.21435 2.71458 8.42223 2.61868 8.65146C2.52277 8.8807 2.47339 9.1267 2.47339 9.37519C2.47339 9.62367 2.52277 9.86968 2.61868 10.0989C2.71458 10.3281 2.85508 10.536 3.03203 10.7105C3.20897 10.8849 3.41882 11.0225 3.64939 11.1151C3.87995 11.2078 4.12663 11.2537 4.37509 11.2502H7.81992C8.72983 11.2502 9.48833 11.8788 9.66074 12.7736L10.0343 14.7268L14.065 35.8962C14.7939 39.7156 18.159 42.5002 22.0484 42.5002H45.4518C49.3412 42.5002 52.7077 39.7167 53.4352 35.8962L57.4659 14.7268C57.5176 14.4557 57.5089 14.1766 57.4403 13.9093C57.3717 13.642 57.245 13.3932 57.0692 13.1805C56.8933 12.9679 56.6728 12.7966 56.4231 12.679C56.1735 12.5614 55.901 12.5004 55.6251 12.5002H13.4254L13.3448 12.0729C12.8409 9.4321 10.5088 7.50019 7.81992 7.50019H4.37509ZM14.1407 16.2502H53.3595L49.7511 35.1955C49.356 37.27 47.5648 38.7502 45.4518 38.7502H22.0484C19.9361 38.7502 18.1461 37.2699 17.7491 35.1955V35.1931L14.1407 16.2502ZM36.8556 19.9807C36.4824 19.9807 36.1178 20.0922 35.8083 20.3007C35.4988 20.5091 35.2586 20.8052 35.1183 21.151C34.9781 21.4968 34.9442 21.8766 35.021 22.2417C35.0978 22.6069 35.2818 22.9409 35.5494 23.2009L37.3487 25.0002H26.8751C26.6266 24.9967 26.38 25.0426 26.1494 25.1352C25.9188 25.2279 25.709 25.3654 25.532 25.5399C25.3551 25.7143 25.2146 25.9222 25.1187 26.1515C25.0228 26.3807 24.9734 26.6267 24.9734 26.8752C24.9734 27.1237 25.0228 27.3697 25.1187 27.5989C25.2146 27.8281 25.3551 28.036 25.532 28.2105C25.709 28.3849 25.9188 28.5225 26.1494 28.6151C26.38 28.7078 26.6266 28.7537 26.8751 28.7502H37.3487L35.5494 30.5495C35.3695 30.7223 35.2258 30.9292 35.1268 31.1582C35.0279 31.3872 34.9756 31.6336 34.973 31.8831C34.9705 32.1325 35.0178 32.38 35.1121 32.6109C35.2064 32.8419 35.3458 33.0517 35.5222 33.2281C35.6986 33.4045 35.9084 33.5439 36.1393 33.6382C36.3703 33.7325 36.6178 33.7798 36.8672 33.7772C37.1166 33.7747 37.3631 33.7224 37.5921 33.6234C37.8211 33.5245 38.028 33.3808 38.2008 33.2009L43.2008 28.2009C43.5523 27.8492 43.7497 27.3724 43.7497 26.8752C43.7497 26.378 43.5523 25.9011 43.2008 25.5495L38.2008 20.5495C38.026 20.3695 37.8169 20.2264 37.5858 20.1287C37.3548 20.031 37.1064 19.9807 36.8556 19.9807ZM25.0001 45.0002C24.0055 45.0002 23.0517 45.3953 22.3484 46.0985C21.6452 46.8018 21.2501 47.7556 21.2501 48.7502C21.2501 49.7447 21.6452 50.6986 22.3484 51.4018C23.0517 52.1051 24.0055 52.5002 25.0001 52.5002C25.9947 52.5002 26.9485 52.1051 27.6517 51.4018C28.355 50.6986 28.7501 49.7447 28.7501 48.7502C28.7501 47.7556 28.355 46.8018 27.6517 46.0985C26.9485 45.3953 25.9947 45.0002 25.0001 45.0002ZM42.5001 45.0002C41.5055 45.0002 40.5517 45.3953 39.8484 46.0985C39.1452 46.8018 38.7501 47.7556 38.7501 48.7502C38.7501 49.7447 39.1452 50.6986 39.8484 51.4018C40.5517 52.1051 41.5055 52.5002 42.5001 52.5002C43.4947 52.5002 44.4485 52.1051 45.1517 51.4018C45.855 50.6986 46.2501 49.7447 46.2501 48.7502C46.2501 47.7556 45.855 46.8018 45.1517 46.0985C44.4485 45.3953 43.4947 45.0002 42.5001 45.0002Z" fill="#FFC230"/>
+                    </symbol>
+                    <symbol id="arrow" width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9998 1.89014L18.5938 0.5L9.98676 8.76123L9.06876 7.87988L9.07376 7.88477L1.42676 0.544922L-0.000244124 1.91406C2.11276 3.94306 8.01376 9.607 9.98676 11.5C11.4528 10.094 10.0238 11.4651 19.9998 1.89014Z" fill="#FFC230"/>
+                    </symbol>
+                    <symbol id="mail-ico" width="76" height="60" viewBox="0 0 76 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path id="Path" fill-rule="evenodd" clip-rule="evenodd" d="M65 59H11C5.478 59 1 54.522 1 49V11C1 5.478 5.478 1 11 1H65C70.522 1 75 5.478 75 11V49C75 54.522 70.522 59 65 59Z" stroke="#FFC230" stroke-width="2"></path>
+                        <path id="Path_2" d="M1 15L38 35L75 15" stroke="#FFC230" stroke-width="2" stroke-linejoin="round"></path>
+                    </symbol>
+                    <symbol id="play-btn-ico" viewBox="0 0 90 90" fill="none">
+                        <path fill="#ffffff" opacity="0.3" d="M45 90C69.8529 90 90 69.8527 90 44.9999C90 20.1471 69.8529 0 45 0C20.1472 0 0 20.1471 0 44.9999C0 69.8527 20.1472 90 45 90Z"></path>
+                        <path fill="#ffffff" d="M45 85C67.0914 85 85 67.0913 85 44.9999C85 22.9086 67.0914 5 45 5C22.9086 5 5 22.9086 5 44.9999C5 67.0913 22.9086 85 45 85Z"></path>
+                        <path d="M35 33.268V56.732C35 58.5212 37.0582 59.6083 38.6432 58.6344L57.8999 46.9025C59.3667 46.0192 59.3667 43.9808 57.8999 43.0749L38.6432 31.3656C37.0582 30.3917 35 31.4788 35 33.268Z" fill="black" opacity="0.8"></path>
+                    </symbol>
+                </defs>
+            </svg>
+        </div>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
